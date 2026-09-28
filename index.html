@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yuzhou Zhao — CV</title><meta name="description" content="Yuzhou Zhao — Compiler Systems, Program Analysis, Graph-Based Optimization, Developer Tools">
+<style>
+:root{--fg:#171717;--muted:#666;--line:#ddd;--accent:#174ea6}*{box-sizing:border-box}body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--fg);background:#fff}.page{max-width:880px;margin:48px auto;padding:0 28px 60px}h1{font-size:34px;margin:0 0 4px;letter-spacing:-.5px}h2{font-size:18px;margin:28px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--line)}h3{font-size:15.5px;margin:15px 0 2px}.meta,.sub{color:var(--muted)}.tagline{margin:10px 0 0}.row{display:flex;justify-content:space-between;gap:18px}.date{white-space:nowrap;color:var(--muted)}p{margin:3px 0 8px}ul{margin:4px 0 12px;padding-left:20px}li{margin:3px 0}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}@media(max-width:600px){.page{margin:24px auto;padding:0 18px 40px}.row{display:block}.date{margin-top:1px}h1{font-size:29px}}@media print{.page{margin:0 auto}.page{max-width:none}a{color:inherit}}
+</style></head><body><main class="page">
+<h1>Yuzhou Zhao</h1>
+<div class="meta"><a href="mailto:zhaoyuzhou@zju.edu.cn">zhaoyuzhou@zju.edu.cn</a> · <a href="https://github.com/Zoar-yalz">GitHub</a></div>
+<p class="tagline"><strong>Compiler Systems · Program Analysis · Graph-Based Optimization · Developer Tools</strong></p>
+<h2>Education</h2>
+<div class="row"><h3>Zhejiang University</h3><span class="date">Sep. 2024 – Jun. 2027 (expected)</span></div>
+<p>Master’s student, College of Computer Science and Technology<br><span class="sub">Advisor: Prof. Bingsheng Zhang</span></p>
+<div class="row"><h3>Jilin University</h3><span class="date">Sep. 2019 – Jun. 2023</span></div>
+<p>B.Eng. in Software Engineering, School of Software</p>
+<h2>Research Experience</h2>
+<div class="row"><h3>Jetfire: Cost-Aware Compilation and Runtime Planning</h3><span class="date">Jun. 2025 – Present</span></div>
+<p class="sub">Manuscript submitted to USENIX Security 2027.</p>
+<ul><li>Built a compiler–runtime optimizer for hybrid ASS/CKKS private Transformer inference, lowering ONNX graphs into cryptographically annotated operators with workload- and environment-aware cost models.</li><li>Proposed Fuse-then-Cut: depth-aware graph fusion followed by s–t min-cut, jointly optimizing protocol assignment, ciphertext refresh, and protocol conversion.</li><li>Achieved the lowest latency in 11 of 12 model/network settings, with up to 27.0% lower latency than the best rebuilt BOLT/BLB baseline.</li></ul>
+<div class="row"><h3>Datalog Compilation and Execution Optimization</h3><span class="date">Oct. 2025 – Mar. 2026</span></div>
+<ul><li>Developed Soufflé-based Datalog execution support for Ant Group’s AntQL and specialized transitive-relation evaluation outside the generic RAM execution path.</li><li>Implemented reachability evaluation using strongly connected component (SCC) condensation and hybrid bitmap representations.</li><li>Characterized graph structure, intermediate-result size, and join ordering, achieving 50–80% performance improvement over default semi-naïve evaluation on Ant Group’s test cases.</li></ul>
+<div class="row"><h3>YASA: Static Analysis–Guided LLM Auditing</h3><span class="date">Mar. 2026 – Jul. 2026</span></div>
+<p class="sub">Research prototype · Code: YASA-SKILLS</p>
+<ul><li>Designed a workflow combining YASA taint analysis with LLM-assisted code auditing, targeting complementary limitations of static analysis and LLM reasoning.</li><li>Developed YASA-SKILLS to guide agents in using YASA and address framework-specific knowledge gaps in LLM-assisted auditing.</li></ul>
+<h2>Systems and Engineering Experience</h2>
+<div class="row"><h3>ByteDance · Infrastructure Technology Internship</h3><span class="date">Sep. 2026 – Present</span></div>
+<ul><li>Optimize the performance of client build-system pipelines, including build caching and tooling migration.</li></ul>
+<div class="row"><h3>Ventus GPGPU Compiler · Open-Source Internship</h3><span class="date">Feb. 2025 – Jun. 2025</span></div>
+<ul><li>Contributed to the LLVM-based Ventus GPGPU compiler backend, implementing support for the RISC-V Zhinxmin extension and associated debugging and integration work.</li></ul>
+<h2>Technical Skills</h2><p><strong>Systems / Tools:</strong> LLVM; Soufflé/Datalog; ONNX; Linux; Git.</p>
+</main></body></html>
