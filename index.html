@@ -1,30 +1,112 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Yuzhou Zhao — CV</title><meta name="description" content="Yuzhou Zhao — Compiler Systems, Program Analysis, Graph-Based Optimization, Developer Tools">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yuzhou Zhao — Academic Homepage</title>
+<meta name="description" content="Yuzhou Zhao — Compiler Optimization, Program Analysis, Programming Languages, and Trustworthy Systems.">
 <style>
-:root{--fg:#171717;--muted:#666;--line:#ddd;--accent:#174ea6}*{box-sizing:border-box}body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--fg);background:#fff}.page{max-width:880px;margin:48px auto;padding:0 28px 60px}h1{font-size:34px;margin:0 0 4px;letter-spacing:-.5px}h2{font-size:18px;margin:28px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--line)}h3{font-size:15.5px;margin:15px 0 2px}.meta,.sub{color:var(--muted)}.tagline{margin:10px 0 0}.row{display:flex;justify-content:space-between;gap:18px}.date{white-space:nowrap;color:var(--muted)}p{margin:3px 0 8px}ul{margin:4px 0 12px;padding-left:20px}li{margin:3px 0}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}@media(max-width:600px){.page{margin:24px auto;padding:0 18px 40px}.row{display:block}.date{margin-top:1px}h1{font-size:29px}}@media print{.page{margin:0 auto}.page{max-width:none}a{color:inherit}}
-</style></head><body><main class="page">
+:root{--fg:#171717;--muted:#666;--line:#ddd;--accent:#174ea6}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--fg);background:#fff}
+.page{max-width:900px;margin:48px auto;padding:0 28px 64px}
+h1{font-size:34px;margin:0 0 4px;letter-spacing:-.5px}
+h2{font-size:18px;margin:29px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--line)}
+h3{font-size:15.5px;margin:15px 0 2px}
+.meta,.sub,.date{color:var(--muted)}
+.tagline{margin:10px 0 8px}
+.links{margin:8px 0 0}
+.links a{margin-right:14px}
+.row{display:flex;justify-content:space-between;gap:18px}
+.date{white-space:nowrap}
+p{margin:3px 0 8px}
+ul{margin:4px 0 12px;padding-left:20px}
+li{margin:3px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+@media(max-width:600px){.page{margin:24px auto;padding:0 18px 44px}.row{display:block}.date{margin-top:1px}h1{font-size:29px}}
+@media print{.page{margin:0 auto;max-width:none}a{color:inherit}}
+</style>
+</head>
+<body>
+<main class="page">
+<header>
 <h1>Yuzhou Zhao</h1>
-<div class="meta"><a href="mailto:zhaoyuzhou@zju.edu.cn">zhaoyuzhou@zju.edu.cn</a> · <a href="https://github.com/Zoar-yalz">GitHub</a></div>
-<p class="tagline"><strong>Compiler Systems · Program Analysis · Graph-Based Optimization · Developer Tools</strong></p>
+<div class="meta"><a href="mailto:zhaoyuzhou@zju.edu.cn">zhaoyuzhou@zju.edu.cn</a> · <a href="https://github.com/Zoar-yalz">GitHub</a> · Hangzhou, China</div>
+<p class="tagline"><strong>Compiler Optimization · Program Analysis · Programming Languages · Trustworthy Systems</strong></p>
+<p class="links"><a href="/files/zhaoyuzhou.pdf">Curriculum Vitae (PDF)</a><a href="/files/transcript.pdf">Academic Transcript (PDF)</a></p>
+</header>
+
+<h2>Research Interests</h2>
+<p>Compiler optimization, program analysis, programming languages, and trustworthy systems. I am interested in compiler–runtime co-design and in using program structure and cost models to make complex software systems more efficient and dependable.</p>
+
 <h2>Education</h2>
 <div class="row"><h3>Zhejiang University</h3><span class="date">Sep. 2024 – Jun. 2027 (expected)</span></div>
-<p>Master’s student, College of Computer Science and Technology<br><span class="sub">Advisor: Prof. Bingsheng Zhang</span></p>
+<p>M.Eng. in Network and Information Security, College of Computer Science and Technology<br><span class="sub">Advisor: Prof. Bingsheng Zhang · Weighted average: 86.64 / 100 (24.0 / 24.0 credits completed; GPA not issued by ZJU)</span></p>
 <div class="row"><h3>Jilin University</h3><span class="date">Sep. 2019 – Jun. 2023</span></div>
 <p>B.Eng. in Software Engineering, School of Software</p>
+
+<h2>Manuscripts &amp; Preprints</h2>
+<ul>
+<li><strong>Yuzhou Zhao</strong>, et al. “Jetfire: Cost-Aware Compilation and Runtime Planning for Private Transformer Inference.” <span class="sub">Manuscript under revision.</span></li>
+<li>Tianpei Lu, Bingsheng Zhang, Lichun Li, <strong>Yuzhou Zhao</strong>, and Kui Ren. “Lightning Fast Secure Comparison for 3PC PPML.” <span class="sub">Under revision at IEEE Transactions on Dependable and Secure Computing (TDSC).</span></li>
+</ul>
+
 <h2>Research Experience</h2>
 <div class="row"><h3>Jetfire: Cost-Aware Compilation and Runtime Planning</h3><span class="date">Jun. 2025 – Present</span></div>
-<p class="sub">Manuscript submitted to USENIX Security 2027.</p>
-<ul><li>Built a compiler–runtime optimizer for hybrid ASS/CKKS private Transformer inference, lowering ONNX graphs into cryptographically annotated operators with workload- and environment-aware cost models.</li><li>Proposed Fuse-then-Cut: depth-aware graph fusion followed by s–t min-cut, jointly optimizing protocol assignment, ciphertext refresh, and protocol conversion.</li><li>Achieved the lowest latency in 11 of 12 model/network settings, with up to 27.0% lower latency than the best rebuilt BOLT/BLB baseline.</li></ul>
-<div class="row"><h3>Datalog Compilation and Execution Optimization</h3><span class="date">Oct. 2025 – Mar. 2026</span></div>
-<ul><li>Developed Soufflé-based Datalog execution support for Ant Group’s AntQL and specialized transitive-relation evaluation outside the generic RAM execution path.</li><li>Implemented reachability evaluation using strongly connected component (SCC) condensation and hybrid bitmap representations.</li><li>Characterized graph structure, intermediate-result size, and join ordering, achieving 50–80% performance improvement over default semi-naïve evaluation on Ant Group’s test cases.</li></ul>
+<p class="sub">Zhejiang University · Manuscript under revision</p>
+<ul>
+<li>Built a compiler–runtime optimizer for hybrid ASS/CKKS private Transformer inference, lowering ONNX graphs into cryptographically annotated operators with workload- and environment-aware cost models.</li>
+<li>Formulated joint protocol assignment, ciphertext refresh, and protocol conversion as a mixed-integer linear program under CKKS depth constraints; evaluated exact ILP solving against a specialized graph-based planner.</li>
+<li>Achieved the lowest latency in 11 of 12 model/network settings, with up to 27.0% lower latency than the best manually rebuilt BOLT/BLB baseline.</li>
+</ul>
+
 <div class="row"><h3>YASA: Static Analysis–Guided LLM Auditing</h3><span class="date">Mar. 2026 – Jul. 2026</span></div>
-<p class="sub">Research prototype · Code: YASA-SKILLS</p>
-<ul><li>Designed a workflow combining YASA taint analysis with LLM-assisted code auditing, targeting complementary limitations of static analysis and LLM reasoning.</li><li>Developed YASA-SKILLS to guide agents in using YASA and address framework-specific knowledge gaps in LLM-assisted auditing.</li></ul>
-<h2>Systems and Engineering Experience</h2>
-<div class="row"><h3>ByteDance · Infrastructure Technology Internship</h3><span class="date">Sep. 2026 – Present</span></div>
+<p class="sub">Funded by CSAC &amp; Ant Group Student Innovation Grant · Code: YASA-SKILLS</p>
+<ul>
+<li>Designed a hybrid auditing workflow combining Ant Group’s UAST-based static taint analyzer (YASA) with LLM-assisted code reasoning to address the complementary limitations of static analysis and LLM auditing.</li>
+<li>Developed YASA-SKILLS to guide LLM agents in invoking YASA analyses and bridging framework-specific knowledge gaps during automated security auditing.</li>
+</ul>
+
+<div class="row"><h3>Datalog Compilation and Execution Optimization</h3><span class="date">Oct. 2025 – Mar. 2026</span></div>
+<p class="sub">Funded by CSAC &amp; Ant Group Student Innovation Grant</p>
+<ul>
+<li>Developed Soufflé-based Datalog execution support for Ant Group’s AntQL and specialized transitive-relation evaluation outside the generic RAM execution path.</li>
+<li>Implemented reachability evaluation using strongly connected component (SCC) condensation and hybrid bitmap representations.</li>
+<li>Characterized the effects of graph structure, intermediate-result size, and join ordering, achieving 50–80% performance improvement over default semi-naïve evaluation on Ant Group’s test cases.</li>
+</ul>
+
+<h2>Systems and Open-Source Experience</h2>
+<div class="row"><h3>ByteDance · Infrastructure Technology Intern</h3><span class="date">Sep. 2026 – Present</span></div>
 <ul><li>Optimize the performance of client build-system pipelines, including build caching and tooling migration.</li></ul>
-<div class="row"><h3>Ventus GPGPU Compiler · Open-Source Internship</h3><span class="date">Feb. 2025 – Jun. 2025</span></div>
-<ul><li>Contributed to the LLVM-based Ventus GPGPU compiler backend, implementing support for the RISC-V Zhinxmin extension and associated debugging and integration work.</li></ul>
-<h2>Technical Skills</h2><p><strong>Systems / Tools:</strong> LLVM; Soufflé/Datalog; ONNX; Linux; Git.</p>
-</main></body></html>
+
+<div class="row"><h3>Ventus GPGPU Compiler · Open-Source Intern</h3><span class="date">Feb. 2025 – Jun. 2025</span></div>
+<ul><li>Contributed to the LLVM-based Ventus GPGPU compiler backend, implementing support for the RISC-V Zhinxmin extension alongside debugging and integration testing.</li></ul>
+
+<div class="row"><h3>Open Source Promotion Plan (OSPP) · openEuler Community</h3><span class="date">Jul. 2023 – Nov. 2023</span></div>
+<p class="sub">Project: RPM Package Reverse-Dependency Query Tool</p>
+<ul>
+<li>Analyzed RPM repository specifications and source code to design reverse-dependency query computation and metadata indexing using Python and SQLite.</li>
+<li>Delivered production tooling, configuration, and documentation merged upstream into the openEuler repository.</li>
+</ul>
+
+<h2>Honors &amp; Grants</h2>
+<ul>
+<li>Student Innovation Grant, Cyber Security Association of China (CSAC) &amp; Ant Group, 2025–2026.</li>
+<li>Outstanding Student, College of Computer Science and Technology, Zhejiang University, 2025.</li>
+<li>Open Source Promotion Plan (OSPP) Completion, Institute of Software, Chinese Academy of Sciences, 2023.</li>
+<li>Outstanding Student, School of Software, Jilin University, 2022.</li>
+<li>First Prize, Jilin Provincial Undergraduate Electronics Design Contest, 2021.</li>
+<li>Third Prize, Jilin Provincial Undergraduate Mathematics Competition.</li>
+</ul>
+
+<h2>Technical Skills</h2>
+<ul>
+<li><strong>Languages:</strong> C/C++, Python, Java, Datalog (Soufflé), SQL.</li>
+<li><strong>Compilers &amp; Analysis:</strong> LLVM (RISC-V backend), ONNX, UAST/YASA static taint analysis, graph and ILP optimization.</li>
+<li><strong>Systems &amp; Privacy:</strong> Secure Multi-Party Computation (3PC / ASS), Homomorphic Encryption (CKKS), Linux, SQLite, Git.</li>
+</ul>
+</main>
+</body>
+</html>
